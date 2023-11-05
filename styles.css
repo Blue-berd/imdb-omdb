@@ -1,0 +1,226 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+body{
+    /* padding:0 4rem; */
+    background-color: rgb(255, 255, 255);
+}
+
+button{
+    text-decoration: none;
+    outline: none;
+    border: none;
+    background-color: rgb(187, 183, 183);
+    border-radius: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    outline: none;
+    color: white;
+}
+/* //index page */
+/* header */
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    background-color: rgb(62, 59, 59);
+    color: white;
+    padding: 1rem 5rem;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo img{
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    height: 8rem;
+}
+
+.navitems{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 2rem;
+    cursor: pointer;
+}
+.header_item{
+    cursor: pointer;
+}
+.searchbar input{
+    outline: none;
+    padding: 1rem 4rem 1rem 1rem;
+    border-radius: 10px;
+    width: 30rem;
+}
+.searchbar img{
+    aspect-ratio: 4/3;
+    object-fit: contain;
+    height: 3rem;
+    cursor: pointer;
+}
+.searchbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+}
+/* main common index favourites*/
+.nomovies{
+    padding: 2rem;
+    font-size: 1.6rem;
+    color:black;
+}
+.movielist{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    background-color: rgb(146, 144, 144);
+    width: 80vw;
+    border-radius:  2rem ;
+    margin: auto;
+}
+.movie_items{
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem;
+    border-radius:  2rem ;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;;
+}
+
+.movieImage{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+.movie_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem;
+    font-size: 1.3rem;
+    width: 100%;
+}
+.movieDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+}
+.movie_info a{
+    text-decoration: none;
+    color: black;
+}
+.poster{
+    aspect-ratio: 4/3;
+    height: 20rem;
+    object-fit: cover;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    border-radius: 5px;
+}
+.favourite{
+    aspect-ratio: 4/3;
+    object-fit: contain;
+    height: 4rem;
+    cursor: pointer;
+}
+
+.container{
+    background-color: rgb(255, 255, 255);
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding:1rem 3rem;
+    height: 100%;
+    background-color: rgb(173, 172, 172);
+}
+/* movie page main*/
+.moviePageCard{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+#movie{
+    background-color: rgb(173, 172, 172);
+}
+.moviePagePoster{
+    aspect-ratio: 4/3;
+    object-fit: contain;
+    height: 80vh;
+    cursor: pointer;
+    border-radius: 5px;
+    margin:0 0 0 -3rem;
+    position: relative;
+}
+.cardItems{
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-start;
+    /* align-items: center; */
+    color: white;
+    font-size: 1.6rem;
+    flex-direction: column;
+    position:absolute;
+    left: 64rem;
+}
+.items{
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    text-align: center;
+}
+.items p{
+    padding: 0.6rem;
+}
+.moviePlot{
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    font-size: 1.6rem;
+    position:absolute;
+    bottom: 34rem;
+    left: 64rem;
+    /* text-align: center; */
+    padding:0 2rem 0 0;
+}
+.moviePlot{
+    text-wrap: nowrap;
+}
+.moviePlot p{
+    padding: 0.6rem;
+    text-wrap: wrap;
+}
+
+.fave{
+    position: fixed;
+    right:10rem;
+    aspect-ratio: 4/3;
+    object-fit: contain;
+    height: 4rem;
+    cursor: pointer;
+}
